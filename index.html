@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriDog</title>
+  <link rel="shortcut icon" href="https://img.icons8.com/bubbles/100/000000/dog.png">
+  <!--Font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Css-->
+  <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <header>
+
+    <nav class="navbar navbar-light">
+
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nombreLogo">
+          <a class="navbar-brand nombreMenu" href="#">NutriDog</a>
+          <img src="https://img.icons8.com/cotton/100/000000/dog-heart--v1.png" class="logo">
+        </div>
+      </div>
+
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="navbar-nav navLista">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#lista">Alimentación</a>
+          <a class="nav-link" href="#">Alimentos Balanceados</a>
+        </div>
+      </div>
+  
+    </nav>
+    <div class="encabezado">
+      <div class="wave">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path class="footer" d="M0.00,49.98 C260.15,273.84 349.20,-49.98 560.38,120.88 L500.00,150.00 L0.00,150.00 Z"></path>
+        </svg>
+      </div>
+  
+    </div>
+  </header>
+  <main class="main">
+    <section class="introduccion">
+      <h1>NutriDog</h1>
+      <p class="introp">Al igual que ocurre con los humanos, la salud de nuestros perros depende en gran medida del tipo de alimentación que tengan. Una alimentación equilibrada, rica en nutrientes y moderada en grasas hará que nuestro perro aumente su expectativa de vida y su calidad sea mejor.</p>
+    </section>
+
+    <section class="calculoDeAlimentacion">
+    <h3>Calcula la cantidad de alimento que debe comer tu mascota</h3>
+    <p class="introp">La regla básica y general (que luego hay que adaptar a cada caso), es que un perro debe comer entre el 2% y el 3% de su peso al día en alimento seco. Esto varia según su nivel de actividad:</p>
+    <ul class="lista" id="lista">
+       <li>Activo: 3% de su peso.</li> 
+       <li>Medio: 2.5% de su peso.</li>
+       <li>Bajo: 2% de su peso.</li>
+       <p>Esta página tiene el propósito de fomentar el cuidado responsable de nuestras mascotas.</p>
+    </ul>
+    <h4>Ingrese los datos de su mascota para calcular su alimento</h4>
+    <div class="calculoDeAlimentacionCuestionario">
+      <form class="cuestionarioBox">
+        <label>Ingrese el nombre:</label>
+        <input type="text" id="inputNombreMasc" placeholder="Nombre" > 
+
+        <label>Ingrese la edad:</label>
+        <input type="number" id="inputEdad" placeholder="Edad" > 
+
+
+        <label>Ingrese el peso:</label>
+        <input type="number" id="inputPeso" placeholder="Peso" > 
+
+        <label>Ingrese el nivel de actividad:</label>
+        <select name="actividad" id="inputActv">
+          <option>-</option>
+
+          <option>Activo</option>
+          
+          <option>Medio</option>
+          
+          <option>Bajo</option>
+        </select>
+        <button id="botonEnviar">Calcular</button>
+
+      </form>
+      <div class="imagenCuestionario">
+        <img  src="./imagenes/pregunta.png" alt="imagen de un perro" >
+      </div>
+    </div>
+
+  </section>   
+  <div id="respuestaUsuario">
+
+  </div> 
+  </main>
+
+
+  <script src="./js/main.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

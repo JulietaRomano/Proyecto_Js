@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Menu*/
+nav{
+    font-family: 'Cabin Sketch';
+    font-size: 1.5em;
+    background-color: rgb(250, 245, 245);
+    color: rgb(82, 67, 67);
+}
+    nav .nombreMenu{
+        font-size: 1.5em;
+    }
+    nav .nombreLogo{
+        display: flex;
+        align-items: center;
+    }
+    nav .logo{
+        width: 2.8rem;
+    }
+    .navLista{
+        padding-left: 5rem;
+    }
+
+/*Imagen de portada*/
+
+.encabezado {
+    height: 65vh;
+    width: 100%;
+    background-image: url(../imagenes/perro.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+ .wave {
+    height: 8em;
+    overflow: hidden; 
+}
+    .wave svg {
+      height: 100%;
+      width: 100%; 
+    }
+        .wave svg path {
+        stroke: none;
+        fill: rgb(250, 245, 245);
+        }
+
+/*MAIN*/
+
+.main{
+    background-color: rgb(250, 245, 245);
+    padding-bottom: 4rem;
+}
+
+    /*Seccion introduccion*/
+    .introduccion{
+        text-align: center;
+        margin: auto;
+        padding: 3rem 6rem 3rem 6rem;
+    }
+    /*Titulo*/
+    .introduccion h1{
+        color: rgb(82, 67, 67);
+        font-size: 3em;
+        font-family: 'Cabin Sketch';
+    }
+    /*Primer párrafo*/
+    .introp{
+        color: gray;
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+
+    /*Seccion Calcular alimento*/
+    .calculoDeAlimentacion{
+        border: dashed rgb(82, 67, 67);
+        background-color: rgb(255, 250, 239);
+        text-align: center;
+        margin: auto;
+        width: 70%;
+        padding: 2rem 6rem 0rem 6rem;
+    }
+    .calculoDeAlimentacion h4{
+        padding-top: 2rem;
+    }
+        .calculoDeAlimentacionCuestionario{
+            padding-top : 0rem;
+            display: flex;
+            align-items:flex-end ;
+        }
+        .cuestionarioBox{
+            padding:2rem 0 1rem 0;
+        }
+        .cuestionarioBox label{
+            margin: 1rem;
+        }
+        .imagenCuestionario img{
+            width: 20rem;
+        }
+
+/*Respuesta del cuestionario de comida*/
+
+#respuestaUsuario{
+    margin-top: 3rem;
+}
+
+#respuestaUsuario div{
+    background-color: rgb(139, 136, 136);
+    color: rgb(253, 253, 253);
+    font-size: 1.2rem;
+    width: 40%;
+    margin: auto;
+    padding: 1.5rem;
+    border: solid .3rem rgb(109, 109, 109);
+
+}
+
+
+
