@@ -1,16 +1,30 @@
+
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
+body{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+
+/*------------- HEADER -------------*/
+
+
 /*Menu*/
 nav{
     font-family: 'Cabin Sketch';
     font-size: 1.5em;
-    background-color: rgb(250, 245, 245);
     color: rgb(82, 67, 67);
+    background: linear-gradient(to bottom, rgba(199, 162, 162, 0.294), white);
+
 }
     nav .nombreMenu{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }
     nav .nombreLogo{
         display: flex;
@@ -23,100 +37,332 @@ nav{
         padding-left: 5rem;
     }
 
-/*Imagen de portada*/
+/*PORTADA*/
 
-.encabezado {
-    height: 65vh;
-    width: 100%;
-    background-image: url(../imagenes/perro.jpg);
-    background-position: center;
-    background-size: cover;
+.portada{
+    height: 83vh;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
- .wave {
-    height: 8em;
-    overflow: hidden; 
-}
-    .wave svg {
-      height: 100%;
-      width: 100%; 
+    /* -- Div texto -- */
+
+    .portadaTexto{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem 0 2rem;
     }
-        .wave svg path {
-        stroke: none;
-        fill: rgb(250, 245, 245);
+
+        .portadaTextoParrafo{
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 400;
+            font-size: 1.2em;
+            color: rgb(117, 114, 114);
+            padding: 2rem ;
         }
 
-/*MAIN*/
+        /*TITULO*/
+
+        .portadaTextoTitulo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .portadaTextoTitulo-typing {
+            width: 24ch;
+            animation: typing 4s steps(35), blink .20s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            font-family: monospace;
+            font-size: 2.7em;
+            color: rgb(82, 67, 67);
+            font-family: 'Cabin Sketch';
+
+        }
+            @keyframes typing {
+                from {
+                width: 0
+                }
+            }
+            @keyframes blink {
+                50% {
+                border-color: transparent
+                }
+            }
+
+    /* -- Div imagen -- */
+
+    .portadaImagen{
+        width: 50%;
+    }
+        .portadaImagen img{
+            width: 100%;
+        }
+
+
+/*------------------ MAIN -----------------*/
 
 .main{
     background-color: rgb(250, 245, 245);
-    padding-bottom: 4rem;
 }
 
-    /*Seccion introduccion*/
+    /*--------- Seccion introduccion ---------- */
     .introduccion{
         text-align: center;
-        margin: auto;
-        padding: 3rem 6rem 3rem 6rem;
+        padding: 12rem 6rem 8rem 6rem;
     }
     /*Titulo*/
-    .introduccion h1{
+    .titulo{
         color: rgb(82, 67, 67);
-        font-size: 3em;
+        font-size: 3.2em;
         font-family: 'Cabin Sketch';
     }
-    /*Primer párrafo*/
-    .introp{
-        color: gray;
-        font-size: 1.3rem;
-        margin-top: 2rem;
+
+/*Caja texto */
+    .introCajaTexto{
+        margin: auto;
+        width: 80%;
+        padding-top: .5rem;
+    }
+        .introp{
+            margin-top: 2rem;
+            font-family: 'Balsamiq Sans', cursive;
+            font-weight: 400;
+            font-size: 1.3em;
+            color: rgb(117, 114, 114);
+
+        }
+
+    /*Botones*/
+    .introCajaBotones{
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around;
+        height: 43vh;
+        width: 85%;
+        padding: 5rem 0 2rem 0;
+    }
+
+    .introCajaBotonesImg {
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out; 
+
+    }
+        .introCajaBotonesImg img{
+            height: 85%;
+        }
+        .introCajaBotonesImg-p{
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding: .3rem;
+            border: solid black .1rem;
+            border-right: solid rgb(15, 15, 15) .3rem;
+            border-bottom: solid rgb(15, 15, 15) .3rem;
+            background-color: rgb(253, 253, 253);
+            border-radius: .5rem;
+            font-family: 'Balsamiq Sans', cursive;
+        }
+        .botonCalculo{
+            background-color: rgb(211, 248, 239);
+        }
+
+    .introCajaBotonesImg:hover{
+        transform: translateY(-15px); 
+    }
+
+
+/* -------------- WAVE ---------------- */
+.wave-1{
+    height: 150px; 
+    overflow: hidden;
+}
+.wave-2{
+    height: 90px; 
+    overflow: hidden;
+}
+.wave-svg{
+    height: 100%; 
+    width: 100%;
+}
+.wave-path{
+    stroke: none; 
+    fill: rgb(251, 253, 255);
+}
+
+
+/* -------------- BLOG ---------------- */
+
+.blog{
+    background-color: white;
+    padding-bottom: 6rem;
+}
+    .blogIntro{
+        width: 70%;
+        margin: auto;
+        padding-bottom: 6rem;
     }
 
     /*Seccion Calcular alimento*/
     .calculoDeAlimentacion{
-        border: dashed rgb(82, 67, 67);
-        background-color: rgb(255, 250, 239);
+        border: dashed rgb(94, 76, 76);
+        background-color: rgb(250, 245, 245);
         text-align: center;
         margin: auto;
         width: 70%;
-        padding: 2rem 6rem 0rem 6rem;
+        box-shadow: 30px -16px rgba(126, 123, 123, 0.274);
     }
+
+    .calculoDeAlimentacionTexto{
+        padding: 4rem 6rem 0rem 6rem;
+    }
+    
+    .subtitulo{
+        font-family: 'Cabin Sketch';
+        color: rgb(82, 67, 67);
+        font-size: 1.8rem;
+    }
+
+    .lista{
+        font-family: 'Balsamiq Sans', cursive;
+        font-weight: 400;
+        font-size: 1.2em;
+        color: rgb(70, 67, 67);
+        margin: auto;
+        width: 40%;
+
+    }
+
+    .calculoDatos{
+        background-color: white;
+    }
+
     .calculoDeAlimentacion h4{
-        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
         .calculoDeAlimentacionCuestionario{
             padding-top : 0rem;
             display: flex;
-            align-items:flex-end ;
+            align-items:flex-end;
+            justify-content: center;
         }
         .cuestionarioBox{
-            padding:2rem 0 1rem 0;
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+
         }
         .cuestionarioBox label{
-            margin: 1rem;
+            margin: .5rem;
         }
         .imagenCuestionario img{
-            width: 20rem;
+            width: 29rem;
         }
 
-/*Respuesta del cuestionario de comida*/
-
-#respuestaUsuario{
-    margin-top: 3rem;
-}
-
-#respuestaUsuario div{
-    background-color: rgb(139, 136, 136);
-    color: rgb(253, 253, 253);
-    font-size: 1.2rem;
-    width: 40%;
-    margin: auto;
-    padding: 1.5rem;
-    border: solid .3rem rgb(109, 109, 109);
-
-}
 
 
 
+/* ---------- BOTON (portada y calcular) -------------*/
+
+
+  .div {
+    display: grid;
+    place-items: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  button {
+    font-weight: 600;
+    border: solid 2px black;
+    outline: 0;
+    padding: 1rem 4rem;
+    font-size: 1.5rem;
+    letter-spacing: .08rem;
+    background-color: white;
+    border-radius: .35rem;
+    position: relative;
+    cursor: pointer;
+  }
+    
+    button::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: pink;
+        z-index: -1;
+        border-radius: .35rem;
+        border: solid 2px black;
+        transition: all .3s ease-in-out;
+    }
+  
+  button.style-5::after {
+      border: 0;
+       box-shadow: 0px 0px 0px 2px black;
+       top: .5rem;
+       left: .5rem;
+    
+  }
+    button:hover {
+      background-color: pink;
+      border: 0;
+    }
+    button:hover::after {
+        background-color: black;
+        box-shadow: none;
+      }
+    
+  
+    /* --------- Div JS -----------*/
+
+      #respuestaUsuario{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          align-content: center;
+          background-color: white;
+          margin-bottom: 3rem;
+      }
+
+      #respuestaUsuario div{
+        height: 25vh;
+        width: 50%;
+        padding: 3rem;
+        border: solid;
+        margin: auto;
+        font-family: 'Balsamiq Sans', cursive;
+        font-size: 1.3rem;
+        background-color: rgb(253, 253, 232);
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
