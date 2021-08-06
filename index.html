@@ -6,10 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NutriDog</title>
   <link rel="shortcut icon" href="https://img.icons8.com/bubbles/100/000000/dog.png">
+  <!-- Iconos -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
   <!--Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Acme&family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Cabin+Sketch:wght@700&family=Sigmar+One&display=swap" rel="stylesheet">
   <!--Bootstrap-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!--Css-->
@@ -18,9 +20,8 @@
 </head>
 <body>
   <header>
-
+    <!-- Menu -->
     <nav class="navbar navbar-light">
-
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -38,68 +39,208 @@
           <a class="nav-link" href="#">Alimentos Balanceados</a>
         </div>
       </div>
-  
     </nav>
-    <div class="encabezado">
-      <div class="wave">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-            <path class="footer" d="M0.00,49.98 C260.15,273.84 349.20,-49.98 560.38,120.88 L500.00,150.00 L0.00,150.00 Z"></path>
-        </svg>
+
+    <!--Portada-->
+    <section class="portada">
+
+      <!--Texto-->
+      <div class="portadaTexto">
+        <div class="portadaTextoTitulo">
+          <div class="portadaTextoTitulo-typing">
+            Encuentra el mejor alimento 
+          </div>
+        </div>
+        <p class="portadaTextoParrafo">Tenemos la mejor variedad de alimentos balanceados de máxima calidad. Promovemos una buena alimentación y el cuidado de tu mascota.</p>
+        
+        <div class="div">
+          <button class="style-5">Tienda Online
+            <i class="fas fa-shopping-cart"></i>
+          </button>
+        </div>
       </div>
-  
-    </div>
-  </header>
-  <main class="main">
-    <section class="introduccion">
-      <h1>NutriDog</h1>
-      <p class="introp">Al igual que ocurre con los humanos, la salud de nuestros perros depende en gran medida del tipo de alimentación que tengan. Una alimentación equilibrada, rica en nutrientes y moderada en grasas hará que nuestro perro aumente su expectativa de vida y su calidad sea mejor.</p>
+
+      <!--Imagen-->
+        <div class="portadaImagen">
+          <img src="/perris.png" alt="">
+        </div>
     </section>
 
-    <section class="calculoDeAlimentacion">
-    <h3>Calcula la cantidad de alimento que debe comer tu mascota</h3>
-    <p class="introp">La regla básica y general (que luego hay que adaptar a cada caso), es que un perro debe comer entre el 2% y el 3% de su peso al día en alimento seco. Esto varia según su nivel de actividad:</p>
-    <ul class="lista" id="lista">
-       <li>Activo: 3% de su peso.</li> 
-       <li>Medio: 2.5% de su peso.</li>
-       <li>Bajo: 2% de su peso.</li>
-       <p>Esta página tiene el propósito de fomentar el cuidado responsable de nuestras mascotas.</p>
-    </ul>
-    <h4>Ingrese los datos de su mascota para calcular su alimento</h4>
-    <div class="calculoDeAlimentacionCuestionario">
-      <form class="cuestionarioBox">
-        <label>Ingrese el nombre:</label>
-        <input type="text" id="inputNombreMasc" placeholder="Nombre" > 
+  </header>
 
-        <label>Ingrese la edad:</label>
-        <input type="number" id="inputEdad" placeholder="Edad" > 
+  <!--Main-->
+  <main class="main">
 
+    <section class="introduccion">
 
-        <label>Ingrese el peso:</label>
-        <input type="number" id="inputPeso" placeholder="Peso" > 
+      <h1 class="titulo">Sobre Nosotros</h1>
 
-        <label>Ingrese el nivel de actividad:</label>
-        <select name="actividad" id="inputActv">
-          <option>-</option>
-
-          <option>Activo</option>
-          
-          <option>Medio</option>
-          
-          <option>Bajo</option>
-        </select>
-        <button id="botonEnviar">Calcular</button>
-
-      </form>
-      <div class="imagenCuestionario">
-        <img  src="./imagenes/pregunta.png" alt="imagen de un perro" >
+      <div class="introCajaTexto">
+        <p class="introp">
+          Somos una empresa dedicada a la venta de alimentos balanceados de máxima calidad. Nuestro objetivo es promover una buena alimentación para las mascotas, ya que esto los hará tener una mejor expectiva y calidad de vida.
+          <br>Sabemos lo que significa para vos tener el amor de tu mascota.
+          Demostrale el cariño que le tenés comprándole los mejores productos.
+        </p>
       </div>
+      <div class="introCajaBotones">
+       
+        <div class="introCajaBotonesImg">
+          <img src="/corazon.png" alt="">
+          <p class="introCajaBotonesImg-p">Registro</p>
+        </div>
+        <div class="introCajaBotonesImg">
+          <img src="/shop.png" alt="">
+          <p class="introCajaBotonesImg-p">Tienda Online</p>
+
+        </div>
+        <div class="introCajaBotonesImg">
+          <img src="/blog.png" alt="">
+          <p class="introCajaBotonesImg-p">Blog</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Divisor-->
+    <div class="wave-1" >
+      <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave-svg">
+        <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" class="wave-path"></path>
+      </svg>
     </div>
 
-  </section>   
-  <div id="respuestaUsuario">
+    <!--Blog-->
 
-  </div> 
+    <section class="blog">
+      <div class="blogIntro">
+        <h2 class="titulo">Blog</h2>
+        <p class="introp"> Al igual que ocurre con los humanos, la salud de nuestros perros depende en gran medida del tipo de alimentación que tengan. Una alimentación equilibrada, rica en nutrientes y moderada en grasas hará que nuestro perro aumente su expectativa de vida y su calidad sea mejor.</p>
+      </div>
+    
+      <article class="calculoDeAlimentacion">
+
+        <div class="calculoDeAlimentacionTexto">
+          <h3 class="subtitulo">Calcula la cantidad de alimento que debe comer tu mascota</h3>
+
+          <p class="introp">La regla básica y general (que luego hay que adaptar a cada caso), es que un perro debe comer entre el 2% y el 3% de su peso al día en alimento seco. Esto varia según su nivel de actividad:</p>
+          <ul class="lista" id="lista">
+            <li><u>Activo:</u> 3% de su peso.</li> 
+            <li><u>Medio:</u> 2.5% de su peso.</li>
+            <li><u>Bajo:</u> 2% de su peso.</li>
+          </ul>
+        </div>
+        <div class="wave-2" >
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" class="wave-svg">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" class="wave-path"></path>
+          </svg>
+        </div>
+    
+        <div class="calculoDatos">
+          <h4 class="subtitulo">Ingrese los datos de su mascota para calcular su alimento</h4>
+          
+          <div class="calculoDeAlimentacionCuestionario">
+            <form class="cuestionarioBox">
+
+
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Nombre:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="inputNombreMasc">
+              </div>
+
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Edad:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="inputEdad">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Peso:</span>
+                <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="inputPeso">
+              </div>
+
+              <select class="form-select" aria-label="Default select example" id="inputActv">
+                <option selected>Nivel de actividad:</option>
+                <option value="Activo">Activo</option>
+                <option value="Medio">Medio</option>
+                <option value="Bajo">Bajo</option>
+              </select>
+
+              <button class="introCajaBotonesImg-p botonCalculo" id="botonEnviar">Calcular</button>
+            </form>
+            <div class="imagenCuestionario">
+              <img  src="./imagenes/pregunta.png" alt="imagen de un perro" >
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>   
+  
+    <div id="respuestaUsuario"></div> 
   </main>
+
+
+<!--<p>Esta página tiene el propósito de fomentar el cuidado responsable de nuestras mascotas. Consulte a su veterinario antes de realizar algun cambio en la alimentación de su mascota.</p>
+-->
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <h5 class="subtitulo">Nuestras redes:</h5>
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright: NutriDog
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+    
+
+
+
 
 
   <script src="./js/main.js"></script>

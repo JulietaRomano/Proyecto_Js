@@ -1,4 +1,3 @@
-
 function datos(){
 
     const arrayValores = ["Bajo" , "Medio", "Activo"];
