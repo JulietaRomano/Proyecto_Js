@@ -1,10 +1,11 @@
+/////////////CALCULO DE ALIMENTO////////////////
+
 function datos(){
 
     const arrayValores = ["Bajo" , "Medio", "Activo"];
     console.log (arrayValores);
     const arrayMultiplicadores = [0.020 , 0.025 , 0.030]
     console.log (arrayMultiplicadores);
-
 
     class Perro {
     
@@ -64,12 +65,111 @@ function datos(){
 
 }
 
+//Evento 
+
 
 const boton = document.getElementById ('botonEnviar');
 boton.addEventListener("click", respuestaClick);
       function respuestaClick(event){
         event.preventDefault();
         datos();
-           
     } 
+
+
+    /////////////////////CARRITO DE COMPRAS//////////////////////
+
+
+/*  function agregarCarrito (){
+
+    function Productos (codigoProd, categoriaProd ,precioProd){
+        this.codigoProd = codigoProd;
+        this.categoriaProd = categoriaProd;
+        this.precioProduc = precioProd;
+        this.cantidad = cantidadProd;
+    }
+    
+    const producto1 = new Productos (1,perro, 1800);
+    const producto2 = new Productos (2,perro, 2400);
+    const producto3 = new Productos (3,perro, 2000);
+    const producto4 = new Productos (4,gato, 2100);
+    const producto5 = new Productos (5,perro, 2250);
+    const producto6 = new Productos (6,perro, 2400);
+    
+
+
+    let confirmacion = confirm('¿Desea agregar al carrito de compras?');
+    if (confirmacion == true){
+        console.log ('hola');
+    }
+} 
+
+const botonCarrito = document.getElementsByClassName('botonCarrito');
+
+botonCarrito.addEventListener("click", carritoClick);
+
+      function carritoClick(){
+        
+        alert('hola');
+    }  */
+
+    
+   
+/////////////REGISTRO//////////////
+
+
+/*Para que aparezca el formulario al apretar el boton de Registrarse*/ 
+
+let registro = document.getElementById('registro');
+let registroform =document.getElementById('registroSection')
+contador = 0;
+
+function mostrarRegistro(){
+
+    if (contador==0){
+        registroform.classList.remove('block');
+        contador = 1;
+        
+    }
+    else{
+        registroform.classList.add('block');
+        contador = 0;
+    }
+}
+
+registro.addEventListener('click', mostrarRegistro,true);
+
+/*Datos registro     let usuarioNombre = document.getElementById('usuarioNombre').value;
+ let usuarioMail = document.getElementById ('usuarioMail').value;
+let usuarioContrasena = document.getElementById('usuarioContrasena').value;
+*/
+
+
+
+function guardarUsuario (){
+
+    let usuarioJSON = JSON.parse('{"nombre":"", "mail":"","contrasena":""}');
+
+    usuarioJSON.nombre = document.getElementById('usuarioNombre').value;
+    usuarioJSON.mail = document.getElementById ('usuarioMail').value;
+    usuarioJSON.contrasena = document.getElementById('usuarioContrasena').value;
+
+    const guardarLocal = (clave,valor) => {localStorage.setItem(clave,valor)};
+    guardarLocal("usuario", JSON.stringify(usuarioJSON));
+
+    let usuarioLocal = JSON.parse(localStorage.getItem("usuario"))["nombre"];
+    console.log(usuarioLocal);
+    
+    let usuarioIngreso = document.getElementById('fijo');
+    let nodoUsuarioIngreso = document.createTextNode(usuarioLocal);
+    usuarioIngreso.appendChild(nodoUsuarioIngreso);
+
+} 
+
+let registroBoton = document.getElementById('registroBoton');
+registroBoton.addEventListener ('click',verjson);
+function verjson (event){
+    event.preventDefault();
+    guardarUsuario  ();
+    mostrarRegistro();
+}
 

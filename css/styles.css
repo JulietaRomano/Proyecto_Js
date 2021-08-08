@@ -10,6 +10,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
 
 /*------------- HEADER -------------*/
@@ -111,7 +112,7 @@ nav{
     /*--------- Seccion introduccion ---------- */
     .introduccion{
         text-align: center;
-        padding: 12rem 6rem 8rem 6rem;
+        padding: 12rem 6rem 6rem 6rem;
     }
     /*Titulo*/
     .titulo{
@@ -162,9 +163,14 @@ nav{
             border: solid black .1rem;
             border-right: solid rgb(15, 15, 15) .3rem;
             border-bottom: solid rgb(15, 15, 15) .3rem;
-            background-color: rgb(253, 253, 253);
+            background-color: rgb(255, 255, 255);
             border-radius: .5rem;
             font-family: 'Balsamiq Sans', cursive;
+            font-size: 16px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        
         }
         .botonCalculo{
             background-color: rgb(211, 248, 239);
@@ -172,6 +178,161 @@ nav{
 
     .introCajaBotonesImg:hover{
         transform: translateY(-15px); 
+    }
+
+
+/* -------------- REGISTRO ---------------- */
+
+    .registroSection{
+        margin-top: 9rem;
+    }
+    .block{
+        display: none;
+    }
+    .registroForm {
+        width: 450px;
+        min-height: 500px;
+        height: auto;
+        border-radius: 5px;
+        margin: 2% auto;
+        box-shadow: 0 9px 50px hsla(16, 9%, 32%, 0.31);
+        padding: 2%;
+        background-image: linear-gradient(-225deg, #f8f3a9 50%, #FFE6FA 50%);
+    }
+    /* form Container */
+    .registroForm .registroForm-div {
+        display: -webkit-flex;
+        display: flex;
+      
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+      
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+      
+          margin: 0 auto;
+    }
+    
+    /* the header form form */
+    .registroForm-cabecera {
+        margin: 2% auto 0% auto;
+        text-align: center;
+    }
+    /* Login title form form */
+    .registroForm-cabecera h4 {
+        font-size: 250%;
+        font-family: 'Cabin Sketch';
+        color: #504a45;
+    }
+    /*  A welcome message or an explanation of the login form */
+    .registroForm-cabecera p {
+        letter-spacing: 0.05em;
+        font-family: 'Balsamiq Sans', cursive;
+    
+    }
+    
+    .input-item {
+        background: #fff;
+        color: #333;
+        padding: 14.5px 0px 15px 9px;
+        border-radius: 5px 0px 0px 5px;
+    }
+    
+    
+    
+    /* Show/hide password Font Icon */
+    #eye {
+        background: #fff;
+        color: #333;
+        margin: 5.9px 0 0 0;
+        margin-left: -20px;
+        padding: 15px 9px 19px 0px;
+        border-radius: 0px 5px 5px 0px;
+      
+        float: right;
+        position: relative;
+        right: 1%;
+        top: -.2%;
+        z-index: 5;
+        
+        cursor: pointer;
+    }
+    /* inputs form  */
+    .form-input[class="form-input"]{
+        width: 240px;
+        height: 50px;
+      
+        margin-top: 2%;
+        padding: 15px;
+        
+        font-size: 16px;
+        font-family: 'Abel', sans-serif;
+        color: #5E6472;
+      
+        outline: none;
+        border: none;
+      
+        border-radius: 0px 5px 5px 0px;
+        transition: 0.2s linear;
+        
+    }
+    .form-input[id="txt-input"] {width: 250px;}
+    /* focus  */
+    .form-input:focus {
+        transform: translateX(-2px);
+        border-radius: 5px;
+    }
+    
+    .log-in {
+        display: inline-block;
+        color: #252537;
+      
+        width: 280px;
+        height: 50px;
+        padding: 0 20px;
+        background: #fff;
+        border-radius: 5px;
+        outline: none;
+        border-right: solid .3rem;
+        border-bottom: solid .3rem;
+        cursor: pointer;
+        text-align: center;
+        transition: all 0.2s linear;
+        margin: 7% auto;
+        letter-spacing: 0.05em;
+    }
+    /* Submits */
+    .submits {
+        width: 48%;
+        display: inline-block;
+        float: left;
+        margin-left: 2%;
+    }
+    
+    /*       Forgot Password button FAF3DD  */
+    .frgt-pass {background: transparent;}
+    
+    /*     Sign Up button  */
+    .sign-up {background: #B8F2E6;}
+    
+    
+    /* buttons hover */
+    .log-in:hover {
+        transform: translatey(3px);
+        box-shadow: none;
+    }
+    
+    /* buttons hover Animation */
+    .log-in:hover {
+        animation: ani9 0.4s ease-in-out infinite alternate;
+    }
+    @keyframes ani9 {
+        0% {
+            transform: translateY(3px);
+        }
+        100% {
+            transform: translateY(5px);
+        }
     }
 
 
@@ -197,9 +358,12 @@ nav{
 /* -------------- BLOG ---------------- */
 
 .blog{
-    background-color: white;
-    padding-bottom: 6rem;
+    padding:5rem 0 6rem 0;
+    border-top: dashed rgb(158, 156, 156);
+    background: linear-gradient(to bottom, rgb(250, 245, 245), white);
+
 }
+
     .blogIntro{
         width: 70%;
         margin: auto;
@@ -209,7 +373,7 @@ nav{
     /*Seccion Calcular alimento*/
     .calculoDeAlimentacion{
         border: dashed rgb(94, 76, 76);
-        background-color: rgb(250, 245, 245);
+        background-color:  #f8f3a9;
         text-align: center;
         margin: auto;
         width: 70%;
@@ -275,7 +439,7 @@ nav{
     -moz-osx-font-smoothing: grayscale;
   }
   
-  button {
+  .botonPortada {
     font-weight: 600;
     border: solid 2px black;
     outline: 0;
@@ -288,7 +452,7 @@ nav{
     cursor: pointer;
   }
     
-    button::after {
+    .botonPortada::after {
         content: '';
         position: absolute;
         top: 0;
@@ -302,18 +466,18 @@ nav{
         transition: all .3s ease-in-out;
     }
   
-  button.style-5::after {
+  .botonPortada.botonPortada::after {
       border: 0;
        box-shadow: 0px 0px 0px 2px black;
        top: .5rem;
        left: .5rem;
     
   }
-    button:hover {
+    .botonPortada:hover {
       background-color: pink;
       border: 0;
     }
-    button:hover::after {
+    .botonPortada:hover::after {
         background-color: black;
         box-shadow: none;
       }
@@ -344,12 +508,128 @@ nav{
 
 
 
+/*-------------------Tienda Online----------------*/
+.tienda{
+    background-color:white;
+    padding-bottom: 8rem;
+}
+.shop{
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+  }
+  
+  .productoContainer{
+    display: flex;
+    height: 360px;
+    width: 45%;
+    margin: 19px ;
+    border-radius: 7px 7px 7px 7px;
+    /* VIA CSS MATIC https://goo.gl/cIbnS */
+    -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-img {
+    float: left;
+    width: 43%;
+    background-color: #f5e3db;
+  }
+  
+  .product-img img {
+    border-radius: 7px 0 0 7px;
+    margin: auto;
+    height:100%;
+     width:100%;
+  }
+  
+  .product-info {
+    width: 55%;
+    border-radius: 0 7px 10px 7px;
+    background-color: #ffffff;
 
+  }
+  
+  .product-text {
+    width: 327px;
+  }
+  
+  .product-text h1 {  
+    padding-top: 30px;
+    font-size: 34px;
+    color: #f61313;
+  }
+  
+  .product-text h2 {
+    margin: 0 0 30px 0px;
+    font-size: 13px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d2d2d2;
+    letter-spacing: 0.2em;
+  }
+  
+  .product-p {
+    padding-right: 15px;
+    height: 135px;
+    margin: 0 0 0 38px;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #a5a3a3;
+    line-height: 1.8em;
+    font-size: 15px;
+    font-weight: lighter;
+    overflow: hidden;
+  }
+  
 
+  .product-price-btn {
+    height: 103px;
+    width: 327px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
 
+  }
+  .precio{
+      font-size: 1.5rem;
+      font-weight: 600;
+      font-family: 'Balsamiq Sans', cursive;
+      color: rgb(95, 84, 84);
 
-
-
+  }
+  .botonCarrito{
+    height: 50px;
+    width: 200px;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    background-color: #97dac8;
+    cursor: pointer;
+    outline: none;
+    margin-top: 25px;
+    border: solid;
+  }
+  
+  .botonCarrito:hover {
+    background-color: #79b0a1;
+  }
+  
+  .fijo{
+    position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  padding: .5rem;
+  z-index: 2;
+  background-color: rgb(202, 185, 172);
+  }
 
 
 
@@ -366,3 +646,21 @@ nav{
 
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
