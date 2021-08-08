@@ -35,8 +35,8 @@
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="navbar-nav navLista">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#lista">Alimentación</a>
-          <a class="nav-link" href="#">Alimentos Balanceados</a>
+          <a class="nav-link" href="#blog">Blog</a>
+          <a class="nav-link" href="#tienda">Tienda Online</a>
         </div>
       </div>
     </nav>
@@ -53,11 +53,12 @@
         </div>
         <p class="portadaTextoParrafo">Tenemos la mejor variedad de alimentos balanceados de máxima calidad. Promovemos una buena alimentación y el cuidado de tu mascota.</p>
         
-        <div class="div">
-          <button class="style-5">Tienda Online
+        <a href="#tienda"><div class="div">
+          <button class="botonPortada">Tienda Online
             <i class="fas fa-shopping-cart"></i>
           </button>
         </div>
+      </a>
       </div>
 
       <!--Imagen-->
@@ -84,23 +85,76 @@
       </div>
       <div class="introCajaBotones">
        
-        <div class="introCajaBotonesImg">
-          <img src="/corazon.png" alt="">
-          <p class="introCajaBotonesImg-p">Registro</p>
-        </div>
-        <div class="introCajaBotonesImg">
-          <img src="/shop.png" alt="">
-          <p class="introCajaBotonesImg-p">Tienda Online</p>
+        <a href="#registroSection" id="registro">
+          <div class="introCajaBotonesImg">
+            <img src="/corazon.png" alt="">
+            <p class="introCajaBotonesImg-p">Registro</p>
+          </div>
+        </a>
 
-        </div>
-        <div class="introCajaBotonesImg">
-          <img src="/blog.png" alt="">
-          <p class="introCajaBotonesImg-p">Blog</p>
-        </div>
+        <a href="#tienda">
+          <div class="introCajaBotonesImg">
+            <img src="/shop.png" alt="">
+            <p class="introCajaBotonesImg-p">Tienda Online</p>
+          </div>
+        </a>
 
+        <a href="#blog">
+          <div class="introCajaBotonesImg">
+            <img src="/blog.png" alt="">
+            <p class="introCajaBotonesImg-p">Blog</p>
+          </div>
+        </a>
       </div>
 
-    </section>
+<div class="fijo" id="fijo">
+  Bienvenid@
+</div>
+
+
+
+<!--Registro-->
+    <div class="registroSection block" id="registroSection">
+
+      <div class="overlay">
+        <form class="registroForm">
+            <div class="registroForm-div">
+              <div class="registroForm-cabecera">
+                <h4>Registro</h4>
+                <p>Ingrese sus datos para registrarse en nuestra web.</p>
+              </div>
+              <br>  
+              <div class="field-set">
+                <!--Nombre de usuario-->
+                <span class="input-item">
+                  <i class="fa fa-user-circle"></i>
+                </span>
+                <input class="form-input"  type="text" placeholder="Nombre de usuario" id="usuarioNombre"  required>
+                  <br>
+                  <input class="form-input"  type="text" placeholder="E-mail" id="usuarioMail" required>
+
+               <!--Contraseña-->
+                
+                <input class="form-input" type="password" placeholder="Contraseña"  name="password" id="usuarioContrasena" required>
+               
+                <br>
+                <button class="log-in" id="registroBoton"> Enviar </button>
+              </div>
+            
+              <div class="other">
+                <button class="btn submits frgt-pass">Olvide mi contraseña</button>
+                <button class="btn submits sign-up">Ingresar 
+                  <i class="fa fa-user-plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
+
+  </section>
+
+
 
     <!--Divisor-->
     <div class="wave-1" >
@@ -109,9 +163,241 @@
       </svg>
     </div>
 
+
+
+
+
+
+
+
+    <section class="tienda" id="tienda">
+
+      <h2 class="titulo">Tienda Online</h1>
+
+    <aside class="shop">
+      <div class="productoContainer">
+    
+        <div class="product-img">
+          <img src="/producto1.png">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Eukanuba</h1>
+            <h2>Adult Small Breed</h2>
+            <p class="product-p">
+              Es un alimento Premium recomendado para perros adultos de raza pequeña que pesan menos de 10 kg. 
+              Contiene proteínas de origen animal que ayudan a que desarrolle músculos fuertes y sanos.       
+            </p>
+          </div>
+    
+          <div class="product-price-btn">
+            <p class="precio">$<span>1800</span></p>
+            <button type="button" class="botonCarrito" id="botonCarrito">
+              Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+    
+      </div>
+    
+      <div class="productoContainer">
+        <div class="product-img">
+          <img src="/producto2.png">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Eukanuba</h1>
+            <h2>Puppy Small Breed</h2>
+            <p class="product-p">Recomendado para perros adultos de más de 1 año de edad,
+              de razas pequeñas. 
+              Alimento balanceado completo para perros adultos
+              donde los requerimientos nutricionales son mayores y su necesidad de energía es alta. 
+            </p>
+          </div>
+          <div class="product-price-btn">
+            <p class="precio">$<span>1800</span></p>
+            
+            <button type="button" class="botonCarrito">
+              Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="productoContainer">
+        <div class="product-img">
+          <img src="/producto3.png">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Royal Canin</h1>
+            <h2>Adult Large Breed</h2>
+            <p class="product-p">Recomendado para perros adultos de más de 1 año de edad,
+              de razas pequeñas. 
+              Alimento balanceado completo para perros adultos
+              donde los requerimientos nutricionales son mayores y su necesidad de energía es alta. 
+            </p>
+          </div>
+          <div class="product-price-btn">
+            <p class="precio">$<span>1800</span></p>
+            
+            <button type="button" class="botonCarrito">
+              Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="productoContainer">
+        <div class="product-img">
+          <img src="/producto4.png">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Royal Canin</h1>
+            <h2>Adult Cat</h2>
+            <p class="product-p">Recomendado para perros adultos de más de 1 año de edad,
+              de razas pequeñas. 
+              Alimento balanceado completo para perros adultos
+              donde los requerimientos nutricionales son mayores y su necesidad de energía es alta. 
+            </p>
+          </div>
+          <div class="product-price-btn">
+            <p class="precio">$<span>1800</span></p>
+            
+            <button type="button" class="botonCarrito">
+              Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="productoContainer">
+        <div class="product-img">
+          <img src="/producto5.png">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Purina ProPlan</h1>
+            <h2>Adult Large Breed</h2>
+            <p class="product-p">Recomendado para perros adultos de más de 1 año de edad,
+              de razas pequeñas. 
+              Alimento balanceado completo para perros adultos
+              donde los requerimientos nutricionales son mayores y su necesidad de energía es alta. 
+            </p>
+          </div>
+          <div class="product-price-btn">
+            <p class="precio">$<span>1800</span></p>
+            
+            <button type="button" class="botonCarrito">
+              Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="productoContainer">
+        <div class="product-img">
+          <img src="/producto6.png">
+        </div>
+        <div class="product-info">
+          <div class="product-text">
+            <h1>Active</h1>
+            <h2>Adult All Breed</h2>
+            <p class="product-p">Recomendado para perros adultos de más de 1 año de edad,
+              de razas pequeñas. 
+              Alimento balanceado completo para perros adultos
+              donde los requerimientos nutricionales son mayores y su necesidad de energía es alta. 
+            </p>
+          </div>
+          <div class="product-price-btn">
+            <p class="precio">$<span>1800</span></p>
+            
+            <button type="button" class="botonCarrito">
+              Agregar <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+    </aside>
+
+    
+  </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Tienda Online
+
+    <section class="tienda">
+
+      <h2 class="titulo">Tienda Online</h1>
+   
+        <aside class="productosContainer">
+
+        <div class="producto">
+            <img src="/producto1.png" alt="" class="productoImg">
+            <button id="agregarCarrito" >Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="/producto2.png" alt="" class="productoImg">
+            <button id="agregarCarrito" class="botonCarrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="/producto3.png" alt="" class="productoImg">
+            <button id="agregarCarrito" class="botonCarrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="/producto4.png" alt="" class="productoImg">
+            <button id="agregarCarrito" class="botonCarrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="/producto5.png" alt="" class="productoImg">
+            <button id="agregarCarrito" class="botonCarrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="/producto6.png" alt="" class="productoImg">
+            <button id="agregarCarrito" class="botonCarrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="/producto7.png" alt="" class="productoImg">
+            <button id="agregarCarrito" class="botonCarrito">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="/producto8.png" alt="" class="productoImg">
+            <button id="agregarCarrito" >Agregar al carrito</button>
+        </div>
+      </aside>
+
+    </section>
+  
+  -->
+
     <!--Blog-->
 
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="blogIntro">
         <h2 class="titulo">Blog</h2>
         <p class="introp"> Al igual que ocurre con los humanos, la salud de nuestros perros depende en gran medida del tipo de alimentación que tengan. Una alimentación equilibrada, rica en nutrientes y moderada en grasas hará que nuestro perro aumente su expectativa de vida y su calidad sea mejor.</p>
@@ -123,7 +409,7 @@
           <h3 class="subtitulo">Calcula la cantidad de alimento que debe comer tu mascota</h3>
 
           <p class="introp">La regla básica y general (que luego hay que adaptar a cada caso), es que un perro debe comer entre el 2% y el 3% de su peso al día en alimento seco. Esto varia según su nivel de actividad:</p>
-          <ul class="lista" id="lista">
+          <ul class="lista">
             <li><u>Activo:</u> 3% de su peso.</li> 
             <li><u>Medio:</u> 2.5% de su peso.</li>
             <li><u>Bajo:</u> 2% de su peso.</li>
@@ -235,13 +521,6 @@
     </div>
     <!-- Copyright -->
   </footer>
-
-
-    
-
-
-
-
 
   <script src="./js/main.js"></script>
   <!--Bootstrap-->
