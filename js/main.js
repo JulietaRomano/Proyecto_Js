@@ -119,57 +119,42 @@ botonCarrito.addEventListener("click", carritoClick);
 
 /*Para que aparezca el formulario al apretar el boton de Registrarse*/ 
 
-let registro = document.getElementById('registro');
-let registroform =document.getElementById('registroSection')
-contador = 0;
+$(document).ready(function () {
 
-function mostrarRegistro(){
+    let registro = $('#registro');
+    let registroform =$('#registroSection');
+    contador = 0;
 
-    if (contador==0){
-        registroform.classList.remove('block');
-        contador = 1;
+    registro.click(function(){
+        if (contador==0){
+            registroform.removeClass('block');
+            contador = 1;
+        }
+        else{
+            registroform.addClass('block');
+            contador = 0;
+        }
+    });
+
+    $('#registroForm').submit(function(evento){
+        evento.preventDefault();
+
+        function guardarUsuario (){
+
+            let usuarioJSON = JSON.parse('{"nombre":"", "mail":"","contrasena":""}');
+
+            usuarioJSON.nombre = $('#usuarioNombre').val();
+            usuarioJSON.mail = $('#usuarioMail').val();
+            usuarioJSON.contrasena = $('#usuarioContrasena').val();
         
-    }
-    else{
-        registroform.classList.add('block');
-        contador = 0;
-    }
-}
+            const guardarLocal = (clave,valor) => {localStorage.setItem(clave,valor)};
+            guardarLocal("usuario", JSON.stringify(usuarioJSON));
+        
+            let usuarioLocal = JSON.parse(localStorage.getItem("usuario"))["nombre"];
+            console.log(usuarioLocal);
+        } 
 
-registro.addEventListener('click', mostrarRegistro,true);
+        guardarUsuario  ();
+    });
 
-/*Datos registro     let usuarioNombre = document.getElementById('usuarioNombre').value;
- let usuarioMail = document.getElementById ('usuarioMail').value;
-let usuarioContrasena = document.getElementById('usuarioContrasena').value;
-*/
-
-
-
-function guardarUsuario (){
-
-    let usuarioJSON = JSON.parse('{"nombre":"", "mail":"","contrasena":""}');
-
-    usuarioJSON.nombre = document.getElementById('usuarioNombre').value;
-    usuarioJSON.mail = document.getElementById ('usuarioMail').value;
-    usuarioJSON.contrasena = document.getElementById('usuarioContrasena').value;
-
-    const guardarLocal = (clave,valor) => {localStorage.setItem(clave,valor)};
-    guardarLocal("usuario", JSON.stringify(usuarioJSON));
-
-    let usuarioLocal = JSON.parse(localStorage.getItem("usuario"))["nombre"];
-    console.log(usuarioLocal);
-    
-    let usuarioIngreso = document.getElementById('fijo');
-    let nodoUsuarioIngreso = document.createTextNode(usuarioLocal);
-    usuarioIngreso.appendChild(nodoUsuarioIngreso);
-
-} 
-
-let registroBoton = document.getElementById('registroBoton');
-registroBoton.addEventListener ('click',verjson);
-function verjson (event){
-    event.preventDefault();
-    guardarUsuario  ();
-    mostrarRegistro();
-}
-
+});
