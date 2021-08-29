@@ -1,0 +1,44 @@
+[
+    {
+        "marca": "Eukanuba",
+        "descripcionCorta":"ADULT SMALL BREED",
+        "descripcionLarga":"Es un alimento Premium recomendado para perros adultos de raza pequeña que pesan menos de 10 kg. Contiene proteínas de origen animal que ayudan a que desarrolle músculos fuertes.",
+        "precio":"2200",
+        "imagen":"./producto1.png"
+    },
+    {
+        "marca": "Eukanuba",
+        "descripcionCorta":"ADULT SMALL BREED",
+        "descripcionLarga":"Recomendado para perros adultos de más de 1 año de edad, de razas pequeñas, donde los requerimientos nutricionales son mayores y su necesidad de energía es alta.",
+        "precio":"1900",
+        "imagen":"./producto2.png"
+    },
+    {
+        "marca": "Royal Canin",
+        "descripcionCorta":"ADULT LARGE BREED",
+        "descripcionLarga":"Recomendado para perros adultos de más de 1 año de edad, de razas pequeñas, donde los requerimientos nutricionales son mayores y su necesidad de energía es alta.",
+        "precio":"2500",
+        "imagen":"./producto3.png"
+    },
+    {
+        "marca": "Royal Canin",
+        "descripcionCorta":"ADULT CAT",
+        "descripcionLarga":"Recomendado para perros adultos de más de 1 año de edad, de razas pequeñas, donde los requerimientos nutricionales son mayores y su necesidad de energía es alta.",
+        "precio":"2000",
+        "imagen":"./producto4.png"
+    },
+    {
+        "marca": "Purina ProPlan",
+        "descripcionCorta":"ADULT LARGE BREED",
+        "descripcionLarga":"Recomendado para perros adultos de más de 1 año de edad, de razas pequeñas, donde los requerimientos nutricionales son mayores y su necesidad de energía es alta.",
+        "precio":"1800",
+        "imagen":"./producto5.png"
+    },
+    {
+        "marca": "Active",
+        "descripcionCorta":"ADULT ALL BREED",
+        "descripcionLarga":"Recomendado para perros adultos de más de 1 año de edad, de razas pequeñas, donde los requerimientos nutricionales son mayores y su necesidad de energía es alta.",
+        "precio":"1500",
+        "imagen":"./producto6.png"
+    }
+]
