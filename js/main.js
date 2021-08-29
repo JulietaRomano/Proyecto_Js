@@ -1,3 +1,26 @@
+   /*------ MENU ------*/ 
+   $(function() {
+       function abrirSubmenu(){
+
+        let contador = true;
+
+           $("#submenu-boton").click(function (e) { 
+               e.preventDefault();
+               let submenuclick = $("#submenu")
+               if (contador == true){
+                contador = false;
+                submenuclick.removeClass("block");
+               }
+               else{
+                submenuclick.addClass("block");
+                contador = true;
+               }
+           });
+       }
+       abrirSubmenu()
+});
+
+
 /////////////CALCULO DE ALIMENTO////////////////
 
 function datos(){
@@ -76,42 +99,6 @@ boton.addEventListener("click", respuestaClick);
     } 
 
 
-    /////////////////////CARRITO DE COMPRAS//////////////////////
-
-
-/*  function agregarCarrito (){
-
-    function Productos (codigoProd, categoriaProd ,precioProd){
-        this.codigoProd = codigoProd;
-        this.categoriaProd = categoriaProd;
-        this.precioProduc = precioProd;
-        this.cantidad = cantidadProd;
-    }
-    
-    const producto1 = new Productos (1,perro, 1800);
-    const producto2 = new Productos (2,perro, 2400);
-    const producto3 = new Productos (3,perro, 2000);
-    const producto4 = new Productos (4,gato, 2100);
-    const producto5 = new Productos (5,perro, 2250);
-    const producto6 = new Productos (6,perro, 2400);
-    
-
-
-    let confirmacion = confirm('¿Desea agregar al carrito de compras?');
-    if (confirmacion == true){
-        console.log ('hola');
-    }
-} 
-
-const botonCarrito = document.getElementsByClassName('botonCarrito');
-
-botonCarrito.addEventListener("click", carritoClick);
-
-      function carritoClick(){
-        
-        alert('hola');
-    }  */
-
     
    
 /////////////REGISTRO//////////////
@@ -158,3 +145,4 @@ $(document).ready(function () {
     });
 
 });
+
